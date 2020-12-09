@@ -172,7 +172,6 @@ with DAG('petroleum',
         dag=petroleum
     )
 
-    # TODO: define upload task here
     cleanup_task = PythonOperator(
         task_id='cleanup',
         python_callable = _clean_files,
